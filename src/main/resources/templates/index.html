@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>
+        Acasă
+    </title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container text-center">
+    <div>
+        <h1>Bine ați venit!</h1>
+    </div>
+    <div>
+        <h3> <a th:href="@{/inregistrare}">Inregistrati-va!</a></h3>
+        <h3> <a th:href="@{/list_users}">Vedeti toți utilizatorii</a></h3>
+        <h3> <a th:href="@{/login}">Login</a></h3>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Modificare Nume Utilizator</title>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css"/>
+</head>
+<body>
+<div class="container text-center">
+    <h1>Modificare Nume Utilizator</h1>
+    <form th:action="@{/edit_name/{id}(id=${user.id})}" method="post">
+        <div class="form-group">
+            <label for="nume">Nume nou:</label>
+            <input type="text" class="form-control" id="nume" name="nume" required/>
+        </div>
+        <button type="submit" class="btn btn-primary">Salvează</button>
+    </form>
+</div>
+</body>
+</html>
